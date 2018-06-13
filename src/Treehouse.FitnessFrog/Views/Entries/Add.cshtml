@@ -7,10 +7,10 @@
 
 <h2>@ViewBag.Title</h2>
 
-@Html.ValidationSummary("The following errors were found: ", new { @class = "alert alert-danger" })
-
 @using (Html.BeginForm())
 {
+    @Html.ValidationSummary("The following errors were found: ", new { @class = "alert alert-danger" })
+
     <div class="row">
 
         <div class="col-md-6">
@@ -50,7 +50,7 @@
                 @*<input id="Exclude" name="Exclude" type="checkbox" value="true" /> Exclude*@
                 <div class="checkbox">
                     <label>
-                         @Html.CheckBoxFor(m => m.Exclude) @Html.DisplayNameFor(m => m.Exclude)
+                        @Html.CheckBoxFor(m => m.Exclude) @Html.DisplayNameFor(m => m.Exclude)
                     </label>
                 </div>
             </div>
