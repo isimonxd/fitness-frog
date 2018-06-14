@@ -122,6 +122,7 @@ namespace Treehouse.FitnessFrog.Controllers
             return View();
         }
 
+        // Created from Extract Method to reuse code
         private void ValidateEntry(Entry entry)
         {
             // If there arent any "Duration" field validation errors 
